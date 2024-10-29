@@ -1,0 +1,122 @@
+/* Cores */
+
+:root {
+    --cor-coral: #FF8C94;
+    --cor-branco: #FFFFFF;
+    --cor-contraste: #5B2E91; 
+}
+
+/* Layout */
+
+body{
+    background-color: #FFFFFF;
+}
+#container-topo{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#main-pet {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -1rem;
+    width: 100%;
+    height: 30rem;
+    background-color: purple;
+}
+
+/* Componentes Menu topo*/
+.menu-topo {
+    margin-right: 10rem;
+    margin-top: 0.5rem;
+}
+.menu-topo a {
+    color: var(--cor-contraste);
+    font-family: "Mont";
+    font-size: 1.5rem;
+    padding: 15px;
+    text-decoration: none;
+    position: relative; 
+}
+.menu-topo a::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    height: 2px; 
+    width: 0; 
+    background-color: var(--cor-coral); 
+    transition: width 0.3s ease; 
+}
+.menu-topo a:hover::after {
+    width: 100%; 
+}
+
+/* Componentes Main */
+#pet-container{
+    display: flex;
+    margin-top: 1.5rem;
+    width: 50rem;
+    height: 20rem;
+    background-color: #FF8C94;
+    margin-left: 4rem;
+    
+}
+.pet-photo {
+    position: relative;
+    width: 310px; /* Ajuste conforme necessário */
+    height: 310px; /* Ajuste conforme necessário */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pet-photo img {
+    margin-left: 0.5rem;
+    position: relative;
+    top: 0.5rem;
+    width: 100%; /* Para que a imagem cubra toda a div */
+    height: 100%;
+    object-fit: cover; /* Para manter a proporção da imagem */
+}
+
+.edit-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white; /* Ajuste a cor conforme necessário */
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+}
+
+#name-pet{
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    position: relative;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    font-family: "Cremy";
+    font-size: 2rem;
+}
+#name {
+    font-family: "Mont";
+    font-size: 1rem;
+    position: relative;
+    top: -3.7rem;
+    left: 13rem;
+    color: white;
+}
+#species-pet{
+    font-family: "Mont";
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+/* Ultilitarios */
+#logo{
+    margin-left: 1rem;
+    margin-top: -1rem;
+    width: 10%;
+    height: 10%;
+}

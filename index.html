@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="globals.css">
+    <title> Audote - Home </title>
+</head>
+<body>
+    <div class="background"></div>
+    <header id="container-topo">
+        <img id="logo" src="./imgs/tempImg1.png" alt="">
+    <nav class="menu-topo">
+        <a href=""> Inicio </a>
+        <a href=""> Adotar </a>
+        <a href=""> Cadastrar Pet </a>
+    </nav>
+    </header>
+    <main id="main-pet">
+        <article id="pet-container">
+            <div class="pet-photo" onclick="document.getElementById('petInput').click()">
+            <input type="file" id="petInput" accept="image/*" hidden onchange="updatePetImage(event)">
+            <img src="default-pet.jpg" alt="Foto do Pet" id="petImage">
+                <i class="fas fa-camera edit-icon"></i>
+            </div>
+            <div id="pet-info">
+            <div id="name-pet"> João cleber</div>
+            <div id="name"> <p>Nome</p></div>
+            <div id="species-pet"> Gato </div>
+            <div id="age-pet"></div> 
+            <div id="race-pet"></div>
+            <div id="description-pet"></div>
+            </div>
+        </article>
+    </main>
+    <script src="./console.js"></script>
+</body>
+</html>
