@@ -18,22 +18,48 @@
     </nav>
     </header>
     <main id="main-pet">
-        <article id="pet-container">
-            <div class="pet-photo" onclick="document.getElementById('petInput').click()">
-            <input type="file" id="petInput" accept="image/*" hidden onchange="updatePetImage(event)">
-            <img src="default-pet.jpg" alt="Foto do Pet" id="petImage">
+        <article id="inputs-pet">
+            <div class="input-photo" onclick="document.getElementById('petInput').click()">
+                <input type="file" id="petInput" accept="image/*" hidden onchange="updatePetImage(event)">
+                <img src="imgs/Default.jpg" alt="" id="petImage">
                 <i class="fas fa-camera edit-icon"></i>
+            </div>
+            <label for="pet-name"> Nome:</label>
+            <input type="text" id="input-name" class="input-style" name="pet-name" placeholder="Digite o nome do pet">
+            
+            <label for="pet-species">Espécie:</label>
+            <input type="text" id="input-species" class="input-style" name="pet-species" placeholder="Digite a espécie do pet">
+            
+            <label for="pet-age">Idade:</label>
+            <input type="number" id="input-age"  class="input-style" name="pet-age" placeholder="Digite a idade do pet" min="0">
+                         
+            <label for="pet-race">Raça:</label>
+            <input type="text" id="input-race" class="input-style" name="pet-race" placeholder="Digite a raça do pet">
+            <div class="descricao">
+            <label for="pet-description">Descrição:</label>
+            <textarea id="input-description" class="input-style" name="pet-description" rows="4" cols="50" placeholder="Que comportamentos ou características únicas seu pet possui?"></textarea>
+            <button onclick="EnviarInputs()" id="Enviar-form"> Cadastrar </button>              
+              
+        </article>
+    <!-- <article id="pet-container">
+        <div class="pet-photo">
+            <img id="displayPetImage" src="./imgs/gato.png" alt="Imagem do pet">
             </div>
             <div id="pet-info">
             <div id="name-pet"> João cleber</div>
             <div id="name"> <p>Nome</p></div>
             <div id="species-pet"> Gato </div>
-            <div id="age-pet"></div> 
-            <div id="race-pet"></div>
-            <div id="description-pet"></div>
+            <div id="species">Espécie</div>
+            <div id="age-pet">9</div> 
+            <div id="age">Idade</div> 
+            <div id="race-pet"> Egipcio</div>
+            <div id="race">Raça</div>
+            <div id="description-pet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa voluptatum, magnam voluptatem debitis, corrupti maiores nobis ducimus sint incidunt at magni. Similique modi quam suscipit sit voluptatum! Voluptatibus, maiores perferendis.</div>
+            <div id="description"> 
+                <p> Descrição </p>
             </div>
-        </article>
-    </main>
+        </article> 
+    </main> -->
     <script src="./console.js"></script>
 </body>
 </html>
