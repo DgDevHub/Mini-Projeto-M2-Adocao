@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/adotar.css">
+    <link rel="stylesheet" href="./src/css/globals.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background"></div>
+    <header id="container-topo">
+        <img id="logo" src="./public/imgs/tempImg1.png" alt="">
+    <nav class="menu-topo">
+        <a href=""> Inicio </a>
+        <a href="/adotar.html"> Adotar </a>
+        <a href="/index.html"> Cadastrar Pet </a>
+    </nav>
+    </header>
+    <main id="main-pet">
+        <div id="pet-edit" style="display: none;">
+            <div class="input-photo" onclick="document.getElementById('petInput').click()">
+                <input type="file" id="petInput" accept="image/*" hidden onchange="updatePetImage(event)">
+                <img src="./public/imgs/Default.jpg" alt="" id="petImage">
+            </div>
+            <input type="text" id="edit-name" class="input-style" placeholder="Nome do pet">
+            <input type="text" id="edit-species" class="input-style" placeholder="Espécie do pet">
+            <input type="text" id="edit-age" class="input-style" placeholder="Idade do pet">
+            <input type="text" id="edit-race" class="input-style" placeholder="Raça do pet">
+            <textarea id="edit-description" class="input-style" placeholder="Descrição do pet"></textarea>
+            <button class="btn-save" onclick="salvarEdicao()">Salvar</button>
+        </div>
+        <div id="pet-list"></div>
+    </main>
+    <script src="./src/js/adotar.js"></script>
+</body>
+</html>

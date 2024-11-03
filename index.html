@@ -3,63 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/globals.css">
     <title> Audote - Home </title>
 </head>
 <body>
     <div class="background"></div>
     <header id="container-topo">
-        <img id="logo" src="./imgs/tempImg1.png" alt="">
+        <img id="logo" src="./public/imgs/tempImg1.png" alt="">
     <nav class="menu-topo">
         <a href=""> Inicio </a>
-        <a href=""> Adotar </a>
-        <a href=""> Cadastrar Pet </a>
+        <a href="/adotar.html"> Adotar </a>
+        <a href="/index.html"> Cadastrar Pet </a>
     </nav>
     </header>
     <main id="main-pet">
         <article id="inputs-pet">
             <div class="input-photo" onclick="document.getElementById('petInput').click()">
                 <input type="file" id="petInput" accept="image/*" hidden onchange="updatePetImage(event)">
-                <img src="imgs/Default.jpg" alt="" id="petImage">
+                <img src="./public/imgs/Default.jpg" alt="" id="petImage">
                 <i class="fas fa-camera edit-icon"></i>
             </div>
-            <label for="pet-name"> Nome:</label>
-            <input type="text" id="input-name" class="input-style" name="pet-name" placeholder="Digite o nome do pet">
-            
-            <label for="pet-species">Espécie:</label>
-            <input type="text" id="input-species" class="input-style" name="pet-species" placeholder="Digite a espécie do pet">
-            
-            <label for="pet-age">Idade:</label>
-            <input type="number" id="input-age"  class="input-style" name="pet-age" placeholder="Digite a idade do pet" min="0">
-                         
-            <label for="pet-race">Raça:</label>
-            <input type="text" id="input-race" class="input-style" name="pet-race" placeholder="Digite a raça do pet">
+            <label for="input-name">Nome:</label>
+            <input type="text" id="input-name" class="input-style" placeholder="Nome do Pet">
+        
+            <label for="input-species">Espécie:</label>
+            <input type="text" id="input-species" class="input-style" placeholder="Espécie do Pet">
+        
+            <label for="input-age">Idade:</label>
+            <input type="text" id="input-age" class="input-style" placeholder="Idade do Pet">
+        
+            <label for="input-race">Raça:</label>
+            <input type="text" id="input-race" class="input-style" placeholder="Raça do Pet">
             <div class="descricao">
-            <label for="pet-description">Descrição:</label>
-            <textarea id="input-description" class="input-style" name="pet-description" rows="4" cols="50" placeholder="Que comportamentos ou características únicas seu pet possui?"></textarea>
-            <button onclick="EnviarInputs()" id="Enviar-form"> Cadastrar </button>              
+                <label for="input-description">Descrição:</label>
+                <textarea id="input-description" class="input-style" name="pet-description" rows="4" cols="50" placeholder="Que comportamentos ou características únicas seu pet possui?"></textarea>
+                <button onclick="RegistrarPet()" id="Enviar-form"> Cadastrar </button>              
+                </div>             
               
         </article>
-    <!-- <article id="pet-container">
-        <div class="pet-photo">
-            <img id="displayPetImage" src="./imgs/gato.png" alt="Imagem do pet">
-            </div>
-            <div id="pet-info">
-            <div id="name-pet"> João cleber</div>
-            <div id="name"> <p>Nome</p></div>
-            <div id="species-pet"> Gato </div>
-            <div id="species">Espécie</div>
-            <div id="age-pet">9</div> 
-            <div id="age">Idade</div> 
-            <div id="race-pet"> Egipcio</div>
-            <div id="race">Raça</div>
-            <div id="description-pet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa voluptatum, magnam voluptatem debitis, corrupti maiores nobis ducimus sint incidunt at magni. Similique modi quam suscipit sit voluptatum! Voluptatibus, maiores perferendis.</div>
-            <div id="description"> 
-                <p> Descrição </p>
-            </div>
-        </article> 
-    </main> -->
-    <script src="./console.js"></script>
+    <footer> </footer>
+    <script src="./src/js/console.js"></script>
 </body>
 </html>

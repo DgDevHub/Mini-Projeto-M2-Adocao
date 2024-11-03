@@ -8,6 +8,7 @@
 /* Layout */
 body{
     background-color: #FFFFFF;
+    overflow: hidden;
 }
 #container-topo{
     display: flex;
@@ -20,7 +21,7 @@ body{
     position: relative;
     top: -1rem;
     width: 100%;
-    height: 35rem;
+    height: auto;
     background-color: var(--cor-contraste);
 }
 
@@ -51,132 +52,6 @@ body{
     width: 100%; 
 }
 
-/* Componentes Main */
-#pet-container{
-    display: flex;
-    border-radius: 0px 20px 20px 20px;
-    margin-top: 1.5rem;
-    width: 50rem;
-    height: 20rem;
-    background-color: var(--cor-branco);
-    margin-left: 4rem;
-    
-}
-.pet-photo {
-    position: relative;
-    width: 310px; /* Ajuste conforme necessário */
-    height: 310px; /* Ajuste conforme necessário */
-    overflow: hidden;
-    cursor: pointer;
-}
-#petImage{
-    border-radius: 0px 20px 20px 20px;
-}
-.pet-photo img {
-    margin-left: 0.5rem;
-    position: relative;
-    top: 0.5rem;
-    width: 100%; /* Para que a imagem cubra toda a div */
-    height: 100%;
-    object-fit: cover; /* Para manter a proporção da imagem */
-}
-
-.edit-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: white; /* Ajuste a cor conforme necessário */
-    font-size: 24px; /* Ajuste o tamanho conforme necessário */
-}
-
-#name-pet{
-    display: flex;
-    justify-content: center;
-    width: 20rem;
-    color: var(--cor-contraste);
-    position: relative;
-    margin-left: 5rem;
-    margin-top: 1.5rem;
-    top: 0.3rem;
-    font-family: "Cremy";
-    font-size: 2rem;
-}
-#name {
-    font-family: "Mont";
-    font-size: 1rem;
-    position: relative;
-    top: -3.2rem;
-    left: 13rem;
-    color: var(--cor-coral);
-}
-#age-pet{
-    position: relative;
-    font-family: "Mont";
-    font-size: 1.5rem;
-    margin-left: 2rem;
-    color: var(--cor-contraste);
-    left: 12rem;
-    top: -2.0rem;
-}
-#age {
-    font-family: "Mont";
-    font-size: 1.1rem;
-    position: relative;
-    top: -4.85rem;
-    left: 13rem;
-    color: var(--cor-coral);
-}
-#species-pet{
-    position: relative;
-    top: 1rem;
-    font-family: "Mont";
-    font-size: 1.5rem;
-    margin-left: 2rem;
-    color: var(--cor-contraste);
-}
-#species{
-    font-family: "Mont";
-    font-size: 1rem;
-    position: relative;
-    top: -1.8rem;
-    left: 1.9rem;
-    color: var(--cor-coral);
-}
-#race-pet{
-    position: relative;
-    top: -5.3rem;
-    font-family: "Mont";
-    font-size: 1.5rem;
-    left: 21.5rem;
-    color: var(--cor-contraste);
-}
-#race{
-    font-family: "Mont";
-    font-size: 1rem;
-    position: relative;
-    top: -8rem;
-    left: 23rem;
-    color: var(--cor-coral);
-}
-#description p{
-    font-family: "Mont";
-    font-size: 1rem;
-    position: relative;
-    top: -12rem;
-    left: 1.8rem;
-    color: var(--cor-coral);  
-}
-#description-pet{
-    position:  relative;
-    font-family: "Mont";
-    color: var(--cor-contraste);
-    font-size: 1rem;
-    top: -3.5rem;
-    left: 1.8rem;
-    width: 25rem;
-    height: 7rem;
-}
-
 #Enviar-form{
     height: 50px;
     width: 200px;
@@ -200,7 +75,7 @@ body{
     box-sizing: border-box;
     margin-bottom: 1rem;
 }
-#inputs-pet label{
+#inputs-pet label {
     font-family: "Mont";
     font-size: 1.1rem;
     position: relative;
@@ -214,7 +89,7 @@ body{
     color: var(--cor-contraste);
     font-size: 1rem;
 }
-label[for="pet-name"] {
+label[for="input-name"] {
     position: relative;
     top: 0.7rem;
     left: 1.6rem;
@@ -228,7 +103,7 @@ label[for="pet-name"] {
     color: var(--cor-contraste);
     font-size: 1rem;
 }
-    label[for="pet-species"] {
+    label[for="input-species"] {
         position: relative;
         top: 4.45rem;
         right: 18.7rem;
@@ -242,7 +117,7 @@ label[for="pet-name"] {
     color: var(--cor-contraste);
     font-size: 1rem;
 }
-    label[for="pet-age"] {
+    label[for="input-age"] {
         position: relative;
         top: 7.85rem;
         right: 37.9rem;
@@ -257,7 +132,7 @@ label[for="pet-name"] {
     color: var(--cor-contraste);
     font-size: 1rem;
 }
-    label[for="pet-race"] {
+    label[for="input-race"] {
         position: relative;
         top: 11.6rem;
         right: 56.5rem;
@@ -270,10 +145,9 @@ label[for="pet-name"] {
         width: 40rem; /* ou ajuste para o tamanho que deseja */
         height: 5rem;
     }
-    label[for="pet-description"] {
+    label[for="input-description"] {
         margin-bottom: 5px;
         font-size: 1rem;
-        color: var(--cor-contraste);
     }
 .descricao{
     position: relative;
@@ -285,7 +159,8 @@ label[for="pet-name"] {
     display: flex;
     align-items: flex-start;
     padding: 2rem;
-    margin-top: 2.3rem;
+    margin-top: 2rem;
+    margin-bottom: 30px;
     width: 70rem;
     position: relative;
     left: 11rem;

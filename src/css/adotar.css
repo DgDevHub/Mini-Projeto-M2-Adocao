@@ -1,0 +1,273 @@
+/* CORES */
+:root {
+    --cor-coral: #FF8C94;
+    --cor-branco: #FFFFFF;
+    --cor-contraste: #5B2E91; 
+}
+
+/*Layout */
+#main-pet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -1rem;
+    width: 100%;
+    background-color: var(--cor-contraste);
+    }
+
+#container-topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body{
+    background-color: #FFFFFF;
+}
+#buttons-pet{
+    display: flex;
+    position: relative;
+    top: -6rem;
+    left: 20rem;
+    gap: 20px;
+}
+#buttons-pet button{
+    width: auto;
+    color: var(--cor-contraste);
+    font-family: "Mont";
+    height: 2rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+#pet-edit{
+    display: flex;
+    border-radius: 0px 20px 20px 20px;
+    margin-top: 1.5rem;
+    width: 50rem;
+    position: relative;
+    right: 1rem;
+    height: 20rem;  /* Pode manter ou ajustar conforme necessário */
+    background-color: var(--cor-branco);
+    margin-left: 4rem;
+    margin-bottom: 25px;
+}
+/*Componentes */
+#pet-edit button{
+    position: relative;
+    top: -10rem;
+    left: 13rem;
+    width: auto;
+    color: var(--cor-contraste);
+    font-family: "Mont";
+    height: 2rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+#edit-name{
+    position: relative;
+    top: -18rem;
+    left: 22rem;
+}
+#edit-species{
+    position: relative;
+    top: -14.5rem;
+    left: 9rem;
+}
+#edit-age{
+    position: relative;
+    top: -11.2rem;
+    right: 4rem;
+}
+#edit-race{
+    position: relative;
+    top: -14.9rem;
+    left: 22rem;
+}
+#edit-description{
+    position: relative;
+    top: -8.3rem;
+    left: 9rem;
+    width: 17rem;
+    height: 4rem;
+}
+.input-style {
+    font-family: "Mont";
+    color: var(--cor-contraste);
+    width: auto;
+    height: 3rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+.pet-container {
+    display: flex;
+    border-radius: 0px 20px 20px 20px;
+    margin-top: 1.5rem;
+    width: 50rem;
+    position: relative;
+    right: 1rem;
+    height: 20rem;  /* Pode manter ou ajustar conforme necessário */
+    background-color: var(--cor-branco);
+    margin-left: 4rem;
+    margin-bottom: 25px;
+}
+#pet-edit img{
+    margin-left: 1rem;
+    position: relative;
+    top: 0.5rem;
+    width: 20rem; 
+    height: 19rem;
+    object-fit: cover; 
+}
+.pet-photo {
+    border-radius: 0px 20px 20px 20px;
+    position: relative;
+    width: 310px; /* Ajuste conforme necessário */
+    height: 310px; /* Ajuste conforme necessário */
+    overflow: hidden;
+    cursor: pointer;
+}
+#petImage{
+    border-radius: 0px 20px 20px 20px;
+}
+.pet-photo img {
+    margin-left: 0.5rem;
+    position: relative;
+    top: 0.5rem;
+    width: 100%; /* Para que a imagem cubra toda a div */
+    height: 100%;
+    object-fit: cover; /* Para manter a proporção da imagem */
+}
+
+.edit-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white; /* Ajuste a cor conforme necessário */
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+}
+
+#name-pet{
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    color: var(--cor-contraste);
+    position: relative;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+    top: 0.3rem;
+    font-family: "Cremy";
+    font-size: 2rem;
+}
+#name {
+    font-family: "Mont";
+    font-size: 1rem;
+    position: relative;
+    top: -3.2rem;
+    left: 13rem;
+    color: var(--cor-coral);
+}
+#age-pet{
+    position: relative;
+    font-family: "Mont";
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    color: var(--cor-contraste);
+    left: 12rem;
+    top: -2.0rem;
+}
+#age {
+    font-family: "Mont";
+    font-size: 1.1rem;
+    position: relative;
+    top: -4.85rem;
+    left: 13rem;
+    color: var(--cor-coral);
+}
+#species-pet{
+    position: relative;
+    top: 1rem;
+    font-family: "Mont";
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    color: var(--cor-contraste);
+}
+#species{
+    font-family: "Mont";
+    font-size: 1rem;
+    position: relative;
+    top: -1.8rem;
+    left: 1.9rem;
+    color: var(--cor-coral);
+}
+#race-pet{
+    position: relative;
+    top: -5.3rem;
+    font-family: "Mont";
+    font-size: 1.5rem;
+    left: 21.5rem;
+    color: var(--cor-contraste);
+}
+#race{
+    font-family: "Mont";
+    font-size: 1rem;
+    position: relative;
+    top: -8rem;
+    left: 23rem;
+    color: var(--cor-coral);
+}
+#description p{
+    font-family: "Mont";
+    font-size: 1rem;
+    position: relative;
+    top: -12rem;
+    left: 1.8rem;
+    color: var(--cor-coral);  
+}
+#description-pet{
+    position:  relative;
+    font-family: "Mont";
+    color: var(--cor-contraste);
+    font-size: 1rem;
+    top: -3.5rem;
+    left: 1.8rem;
+    width: 25rem;
+    height: 7rem;
+}
+
+/* Logo */
+#logo{
+    margin-left: 1rem;
+    margin-top: -1rem;
+    width: 10%;
+    height: 10%;
+}
+
+/* Menu Topo*/
+.menu-topo {
+    margin-right: 10rem;
+    margin-top: 0.5rem;
+}
+.menu-topo a {
+    color: var(--cor-contraste);
+    font-family: "Mont";
+    font-size: 1.5rem;
+    padding: 15px;
+    text-decoration: none;
+    position: relative; 
+}
+.menu-topo a::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    height: 2px; 
+    width: 0; 
+    background-color: var(--cor-coral); 
+    transition: width 0.3s ease; 
+}
+.menu-topo a:hover::after {
+    width: 100%; 
+}
