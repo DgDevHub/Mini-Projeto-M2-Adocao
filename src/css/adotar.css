@@ -236,6 +236,16 @@ body{
     width: 25rem;
     height: 7rem;
 }
+#no-pets-message{
+    margin: 1rem;
+    border-radius: 0px 4px 4px 4px;
+    background-color: var(--cor-branco);
+    width: auto;
+    height: 1.5rem;
+    color: var(--cor-contraste); 
+    font-size: 1rem;
+    font-family: "Mont";
+}
 
 /* Logo */
 #logo{

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/globals.css">
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/index.css">
     <title> Audote - Home </title>
 </head>
 <body>
@@ -12,37 +12,18 @@
     <header id="container-topo">
         <img id="logo" src="imgs/tempImg1.png" alt="">
     <nav class="menu-topo">
-        <a href=""> Inicio </a>
+        <a href="index.html"> Inicio </a>
         <a href="adotar.html"> Adotar </a>
-        <a href="index.html"> Cadastrar Pet </a>
+        <a href="cadastro.html"> Cadastrar Pet </a>
     </nav>
     </header>
     <main id="main-pet">
-        <article id="inputs-pet">
-            <div class="input-photo" onclick="document.getElementById('petInput').click()">
-                <input type="file" id="petInput" accept="image/*" hidden onchange="updatePetImage(event)">
-                <img src="./imgs/Default.jpg" alt="" id="petImage">
-                <i class="fas fa-camera edit-icon"></i>
-            </div>
-            <label for="input-name">Nome:</label>
-            <input type="text" id="input-name" class="input-style" placeholder="Nome do Pet">
-        
-            <label for="input-species">Espécie:</label>
-            <input type="text" id="input-species" class="input-style" placeholder="Espécie do Pet">
-        
-            <label for="input-age">Idade:</label>
-            <input type="number" id="input-age" class="input-style" placeholder="Idade do Pet">
-        
-            <label for="input-race">Raça:</label>
-            <input type="text" id="input-race" class="input-style" placeholder="Raça do Pet">
-            <div class="descricao">
-                <label for="input-description">Descrição:</label>
-                <textarea id="input-description" class="input-style" name="pet-description" rows="4" cols="50" placeholder="Que comportamentos ou características únicas seu pet possui?"></textarea>
-                <button onclick="RegistrarPet()" id="Enviar-form"> Cadastrar </button>
-                <p id="mensagem" style="display: none;">Seu Pet foi adicionado!</p>         
-                </div>             
+        <article>
+            <h2>Bem vindo á Audote!</h2>
+            <p> A Audote é uma plataforma de adoção online criada para facilitar o processo de adoção de animais, tanto para pet shops quanto para pessoas que desejam colocar pets para adoção. A ideia é que pet shops possam personalizar o sistema para suas necessidades, possibilitando a criação de parcerias e uma maior visibilidade para os animais disponíveis. A plataforma conecta facilmente adotantes a animais que precisam de um lar, promovendo um processo prático e acessível de adoção. </p>
+            <h2>Como Usar</h2>
+            <p>Para cadastrar seu pet para adoção, clique em "Cadastrar Pet". Após isso, você poderá visualizar o animal na aba "Adotar". Caso precise, você pode editar ou excluir as informações do pet a qualquer momento, garantindo que os dados estejam sempre atualizados.</p>
         </article>
-    <footer> </footer>
-    <script src="src/js/console.js"></script>
+    </main>
 </body>
 </html>

@@ -12,38 +12,45 @@ function exibirPet(pet) {
 
 function listarPets() {
     const petListContainer = document.getElementById("pet-list");
+    const noPetsMessage = document.getElementById("no-pets-message");
     petListContainer.innerHTML = "";
 
-    pets.forEach((pet, index) => {
-        const petDiv = document.createElement("article");
-        petDiv.className = "pet-container";
-        petDiv.setAttribute("data-index", index);
+    if (pets.length === 0) {
+        noPetsMessage.style.display = "block"; // Exibe a mensagem se não houver pets
+        petListContainer.style.display = "none"; // Esconde a lista de pets
+    } else {
+        noPetsMessage.style.display = "none"; // Esconde a mensagem se houver pets
+        petListContainer.style.display = "block"; // Exibe a lista de pets
 
-        petDiv.innerHTML = `
-            <div class="pet-photo">
-                <img src="${pet.image || "/imgs/Default.jpg"}" alt="Imagem do pet ${pet.name}">
-            </div>
-            <div id="pet-info">
-                <div id="name-pet"> ${pet.name || "Vazio"} </div>
-                <div id="name"> <p>Nome</p></div>
-                <div id="species-pet"> ${pet.species || "Vazio"} </div>
-                <div id="species">Espécie</div>
-                <div id="age-pet"> ${pet.age || "Vazio"} </div> 
-                <div id="age">Idade</div> 
-                <div id="race-pet"> ${pet.race || "Vazio"} </div>
-                <div id="race">Raça</div>
-                <div id="description-pet"> ${pet.description || "Sem descrição"} </div>
-                <div id="description"> 
-                    <p> Descrição </p>
+        pets.forEach((pet, index) => {
+            const petDiv = document.createElement("article");
+            petDiv.className = "pet-container";
+            petDiv.setAttribute("data-index", index);
+
+            petDiv.innerHTML = `
+                <div class="pet-photo">
+                    <img src="${pet.image || "/imgs/Default.jpg"}" alt="Imagem do pet ${pet.name}">
                 </div>
-                <div id="buttons-pet">
-                <button onclick="editarPet(${index})">Editar</button>
-                <button onclick="excluirPet(${index})">Excluir</button>
+                <div id="pet-info">
+                    <div id="name-pet">${pet.name || "Vazio"}</div>
+                    <div id="name"><p>Nome</p></div>
+                    <div id="species-pet">${pet.species || "Vazio"}</div>
+                    <div id="species">Espécie</div>
+                    <div id="age-pet">${pet.age || "Vazio"}</div>
+                    <div id="age">Idade</div>
+                    <div id="race-pet">${pet.race || "Vazio"}</div>
+                    <div id="race">Raça</div>
+                    <div id="description-pet">${pet.description || "Sem descrição"}</div>
+                    <div id="description"><p>Descrição</p></div>
+                    <div id="buttons-pet">
+                        <button onclick="editarPet(${index})">Editar</button>
+                        <button onclick="excluirPet(${index})">Excluir</button>
+                    </div>
                 </div>
-            </div>
-        `;
-        petListContainer.appendChild(petDiv);
-    });
+            `;
+            petListContainer.appendChild(petDiv);
+        });
+    }
 }
 
 function excluirPet(index) {

@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/globals.css">
     <link rel="stylesheet" href="/src/css/adotar.css">
-    <title>Document</title>
+    <title>Audote - Home</title>
 </head>
 <body>
     <div class="background"></div>
     <header id="container-topo">
         <img id="logo" src="imgs/tempImg1.png" alt="">
     <nav class="menu-topo">
-        <a href=""> Inicio </a>
+        <a href="index.html"> Inicio </a>
         <a href="adotar.html"> Adotar </a>
-        <a href="index.html"> Cadastrar Pet </a>
+        <a href="cadastro.html"> Cadastrar Pet </a>
     </nav>
     </header>
     <main id="main-pet">
+        <div id="no-pets-message" style="display: none;">
+            <p>Não há nenhum pet cadastrado ainda.</p>
+        </div>
         <div id="pet-edit" style="display: none;">
             <div class="input-photo" onclick="document.getElementById('petInput').click()">
                 <input type="file" id="petInput" accept="image/*" hidden onchange="updatePetImage(event)">

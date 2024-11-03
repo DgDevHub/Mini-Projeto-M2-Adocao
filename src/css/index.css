@@ -1,0 +1,91 @@
+:root {
+    --cor-coral: #FF8C94;
+    --cor-branco: #FFFFFF;
+    --cor-contraste: #5B2E91; 
+}
+
+/* Layout */
+
+body{
+    background-color: #FFFFFF;
+    /* overflow: hidden; */
+}
+#container-topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+article {
+    background-color: var(--cor-branco);
+    display: flex;
+    color: var(--cor-contraste);
+    font-family: "Mont";
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 10px;
+    margin-top: 2rem;
+    margin-bottom: 30px;
+    width: 70rem;
+    position: relative;
+    left: 11rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+#main-pet {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0rem;
+    width: 100%;
+    height: auto;
+    background-color: var(--cor-contraste);
+}
+
+/* Componentes */
+
+.menu-topo {
+    margin-right: 10rem;
+    margin-top: 0.5rem;
+}
+.menu-topo a {
+    color: var(--cor-contraste);
+    font-family: "Mont";
+    font-size: 1.5rem;
+    padding: 15px;
+    text-decoration: none;
+    position: relative; 
+}
+.menu-topo a::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    height: 2px; 
+    width: 0; 
+    background-color: var(--cor-coral); 
+    transition: width 0.3s ease; 
+}
+.menu-topo a:hover::after {
+    width: 100%; 
+}
+#logo{
+    margin-left: 1rem;
+    margin-top: -1rem;
+    width: 10%;
+    height: 10%;
+}
+article h2{
+    font-family: "Cremy";
+    font-size: 3rem;
+    color: var(--cor-coral);
+}
+article p {
+    text-align: center; /* Centraliza o texto */
+    max-width: 95%; /* Ajuste o valor conforme necessário para controlar a largura */
+    margin: 0 auto; /* Centraliza o parágrafo dentro do article */
+}
