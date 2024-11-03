@@ -11,7 +11,7 @@ function updatePetImage(event) {
         reader.readAsDataURL(file);
     }
 }
-// Array para armazenar os pets
+
 let pets = JSON.parse(sessionStorage.getItem("pets")) || [];
 let i = localStorage.getItem("i") ? parseInt(localStorage.getItem("i")) : 0;
 
@@ -26,8 +26,8 @@ class Pet {
     }
 }
 
-// Função para registrar um novo pet
 function RegistrarPet() {
+    const mensagem = document.getElementById("mensagem");
     const name = document.getElementById("input-name").value.trim();
     const species = document.getElementById("input-species").value.trim();
     const age = document.getElementById("input-age").value.trim();
@@ -39,17 +39,20 @@ function RegistrarPet() {
     pets.push(newPet);
     sessionStorage.setItem("pets", JSON.stringify(pets));
 
-    // Atualiza o índice
     i++;
     localStorage.setItem("i", i);
-    localStorage.removeItem("i");
-    console.log(i)
+    console.log(i);
 
-    // Limpa os campos
     document.getElementById("input-name").value = '';
     document.getElementById("input-species").value = '';
     document.getElementById("input-age").value = '';
     document.getElementById("input-race").value = '';
     document.getElementById("input-description").value = '';
     document.getElementById('petImage').src = '../public/imgs/Default.jpg';
+    
+    mensagem.style.display = 'flex';
+
+    setTimeout(() => {
+        mensagem.style.display = 'none';
+    }, 2000);
 }

@@ -68,6 +68,7 @@ body{
 }
 
 /* Inputs cadastro */
+
 .input-style {
     width: auto;
     height: 3rem;
@@ -142,7 +143,7 @@ label[for="input-name"] {
         font-family: "Mont";
         color: var(--cor-contraste);
         font-size: 1rem;
-        width: 40rem; /* ou ajuste para o tamanho que deseja */
+        width: 40rem; 
         height: 5rem;
     }
     label[for="input-description"] {
@@ -153,6 +154,14 @@ label[for="input-name"] {
     position: relative;
     right: 76rem;
     top: 14.7rem;
+}
+.descricao p{
+    position: relative;
+    top: -2.2rem;
+    left: 6rem;
+    font-family: "Mont";
+    color: var(--cor-contraste);
+    font-size: 1.2rem;
 }
 #inputs-pet {
     background-color: var(--cor-branco);
@@ -174,6 +183,7 @@ label[for="input-name"] {
     top: 0.5rem;
     width: 20rem; 
     height: 20rem;
+    border-radius: 0px 20px 20px 20px;
     object-fit: cover; 
 }
 

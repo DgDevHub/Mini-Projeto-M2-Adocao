@@ -18,10 +18,10 @@
 .background {
     background-image: url('/public/imgs/Background.jpg');
     width: 100%;
-    height: 100vh;  /* 100% da altura da viewport */
-    position: fixed;  /* Usa fixed para que o fundo não se mova com o conteúdo */
+    height: 100vh; 
+    position: fixed; 
     top: 0; 
     left: 0; 
-    opacity: 35%;  /* Mantém a opacidade que você definiu */
+    opacity: 35%;  
     z-index: -1; 
 }
