@@ -16,7 +16,7 @@ let pets = JSON.parse(sessionStorage.getItem("pets")) || [];
 let i = localStorage.getItem("i") ? parseInt(localStorage.getItem("i")) : 0;
 
 class Pet {
-    constructor(name, species, age, race, description, image = "/public/imgs/Default.jpg") {
+    constructor(name, species, age, race, description, image = "imgs/Default.jpg") {
         this.name = name;
         this.species = species;
         this.age = age;
@@ -48,7 +48,7 @@ function RegistrarPet() {
     document.getElementById("input-age").value = '';
     document.getElementById("input-race").value = '';
     document.getElementById("input-description").value = '';
-    document.getElementById('petImage').src = '/public/imgs/Default.jpg';
+    document.getElementById('petImage').src = 'imgs/Default.jpg';
 
     mensagem.style.display = 'flex';
 

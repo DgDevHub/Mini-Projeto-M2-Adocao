@@ -21,7 +21,7 @@ function listarPets() {
 
         petDiv.innerHTML = `
             <div class="pet-photo">
-                <img src="${pet.image || "/public/imgs/Default.jpg"}" alt="Imagem do pet ${pet.name}">
+                <img src="${pet.image || "/imgs/Default.jpg"}" alt="Imagem do pet ${pet.name}">
             </div>
             <div id="pet-info">
                 <div id="name-pet"> ${pet.name || "Vazio"} </div>
@@ -59,7 +59,7 @@ function editarPet(index) {
     document.getElementById("pet-list").style.display = "none";
     document.getElementById("pet-edit").style.display = "block";
     const pet = pets[index];
-    document.getElementById("petImage").src = pet.image || "/public/imgs/Default.jpg";
+    document.getElementById("petImage").src = pet.image || "imgs/Default.jpg";
     document.getElementById("edit-name").value = pet.name || "";
     document.getElementById("edit-species").value = pet.species || "";
     document.getElementById("edit-age").value = pet.age || "";
