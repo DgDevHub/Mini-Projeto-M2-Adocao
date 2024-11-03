@@ -5,18 +5,18 @@
 }
 @font-face {
     font-family: "Pacifico";
-    src: url(../src/fonts/Pacifico.ttf) format(truetype);
+    src: url(/src/fonts/Pacifico.ttf) format(truetype);
 }
 @font-face {
     font-family: "Cremy";
-    src: url(../src/fonts/Chewy-Regular.ttf) format(truetype);
+    src: url(/src/fonts/Chewy-Regular.ttf) format(truetype);
 }
 @font-face {
     font-family: "Mont";
-    src: url(../src/fonts/Montserrat-Bold.ttf) format(truetype);
+    src: url(/src/fonts/Montserrat-Bold.ttf) format(truetype);
 }
 .background {
-    background-image: url('../imgs/Background.jpg');
+    background-image: url('/imgs/Background.jpg');
     width: 100%;
     height: 100vh; 
     position: fixed; 
