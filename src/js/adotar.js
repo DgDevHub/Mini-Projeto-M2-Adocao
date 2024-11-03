@@ -2,7 +2,7 @@ let pets = JSON.parse(sessionStorage.getItem("pets")) || [];
 let i = localStorage.getItem("i") ? parseInt(localStorage.getItem("i")) : 0;
 
 function exibirPet(pet) {
-    document.getElementById("displayPetImage").src = pet.image || "imgs/Default.jpg";
+    document.getElementById("displayPetImage").src = pet.image || "../imgs/Default.jpg";
     document.getElementById("name-pet").innerText = pet.name || "Vazio";
     document.getElementById("species-pet").innerText = pet.species || "Vazio";
     document.getElementById("age-pet").innerText = pet.age || "Vazio";

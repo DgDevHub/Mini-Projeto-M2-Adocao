@@ -48,7 +48,7 @@ function RegistrarPet() {
     document.getElementById("input-age").value = '';
     document.getElementById("input-race").value = '';
     document.getElementById("input-description").value = '';
-    document.getElementById('petImage').src = 'imgs/Default.jpg';
+    document.getElementById('petImage').src = '../imgs/Default.jpg';
 
     mensagem.style.display = 'flex';
 
