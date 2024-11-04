@@ -25,3 +25,11 @@
     opacity: 35%;  
     z-index: -1; 
 }
+@media (max-width: 768px){
+    .background {
+        height: 100%; /* Ajuste para que se adapte a telas menores */
+    }
+    body{
+        overflow-x: hidden;
+    }
+}

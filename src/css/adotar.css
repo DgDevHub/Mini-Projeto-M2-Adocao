@@ -376,6 +376,8 @@
         gap: 10px;
     }
     #main-pet{
+        width: 100%;
+        background-color: red;
         margin: 0rem ;
     }
     #pet-edit {
@@ -394,11 +396,12 @@
     #buttons-pet button {
         position: relative;
         top: auto;
-        left: -20rem;
         padding: 0.5rem 1rem;
     }
     #buttons-pet {
         display: flex;
+        position: relative;
+        left: 0;
         justify-content: center;
         gap: 1rem; /* Espaçamento entre os botões */
         margin-top: 4rem; /* Espaço entre a descrição e os botões */
