@@ -27,7 +27,7 @@ class Pet {
 }
 
 function RegistrarPet() {
-    // Obter os valores dos inputs
+    
     const name = document.getElementById("input-name").value.trim();
     const species = document.getElementById("input-species").value.trim();
     const age = document.getElementById("input-age").value.trim();
@@ -35,11 +35,11 @@ function RegistrarPet() {
     const description = document.getElementById("input-description").value.trim();
     const petImageSrc = document.getElementById("petImage").src;
 
-    // Verifica se todos os campos estão preenchidos
+    
     if (name && species && age && race && description) {
         const mensagem = document.getElementById("mensagem");
 
-        // Criação do novo pet
+        
         const newPet = new Pet(name, species, age, race, description, petImageSrc);
         pets.push(newPet);
         sessionStorage.setItem("pets", JSON.stringify(pets));
@@ -48,7 +48,7 @@ function RegistrarPet() {
         localStorage.setItem("i", i);
         console.log(i);
 
-        // Limpar os campos após o cadastro
+        
         document.getElementById("input-name").value = '';
         document.getElementById("input-species").value = '';
         document.getElementById("input-age").value = '';
@@ -56,7 +56,7 @@ function RegistrarPet() {
         document.getElementById("input-description").value = '';
         document.getElementById('petImage').src = '../imgs/Default.jpg';
 
-        // Exibir mensagem de sucesso
+        
         mensagem.style.display = 'flex';
 
         setTimeout(() => {

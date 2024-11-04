@@ -43,7 +43,7 @@ body{
     position: absolute;
     left: 0;
     bottom: 0; 
-    height: 2px; 
+    height: 0.3rem; 
     width: 0; 
     background-color: var(--cor-coral); 
     transition: width 0.3s ease; 
@@ -53,8 +53,8 @@ body{
 }
 
 #Enviar-form{
-    height: 50px;
-    width: 200px;
+    height: 3rem;
+    width: 12rem;
     position: relative;
     left: 29rem;
     background-color: var(--cor-coral);
@@ -168,11 +168,10 @@ label[for="input-name"] {
     display: flex;
     align-items: flex-start;
     padding: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 30px;
+    margin: 2rem;
     width: 70rem;
     position: relative;
-    left: 11rem;
+    left: 9rem;
     max-width: 100%;
     height: 30rem;
     border-radius: 0px 20px 20px 20px;

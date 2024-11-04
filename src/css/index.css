@@ -26,8 +26,7 @@ article {
     flex-direction: column;
     padding: 2rem;
     gap: 10px;
-    margin-top: 2rem;
-    margin-bottom: 30px;
+    margin: 2rem;
     width: 70rem;
     position: relative;
     left: 11rem;
