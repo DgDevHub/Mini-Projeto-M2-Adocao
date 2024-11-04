@@ -22,16 +22,20 @@
             <p>Não há nenhum pet cadastrado ainda.</p>
         </div>
         <div id="pet-edit" style="display: none;">
+            <div id="photo">
             <div class="input-photo" onclick="document.getElementById('petInput').click()">
                 <input type="file" id="petInput" accept="image/*" hidden onchange="updatePetImage(event)">
                 <img src="imgs/Default.jpg" alt="" id="petImage">
+            </div>
             </div>
             <input type="text" id="edit-name" class="input-style" placeholder="Nome do pet">
             <input type="text" id="edit-species" class="input-style" placeholder="Espécie do pet">
             <input type="text" id="edit-age" class="input-style" placeholder="Idade do pet">
             <input type="text" id="edit-race" class="input-style" placeholder="Raça do pet">
             <textarea id="edit-description" class="input-style" placeholder="Descrição do pet"></textarea>
+            <div id="btn">
             <button class="btn-save" onclick="salvarEdicao()">Salvar</button>
+        </div>
         </div>
         <div id="pet-list"></div>
     </main>

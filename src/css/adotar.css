@@ -392,6 +392,13 @@
         left: 0.4rem;
         object-fit: cover; 
     }
+    #photo img{
+        border-radius: 0px 20px 20px 20px;
+        width: 90%; 
+        height: 90%;
+        left: 0.4rem;
+        object-fit: cover; 
+    }
     #buttons-pet button {
         position: relative;
         top: auto;
@@ -404,5 +411,17 @@
         justify-content: center;
         gap: 1rem; /* Espaçamento entre os botões */
         margin-top: 4rem; /* Espaço entre a descrição e os botões */
+    }
+    #edit-name,#edit-species,#edit-age,#edit-race,#edit-description{
+        position: relative;
+        left: 0;
+        top: 1.4rem;
+        margin-left: 2rem;
+    }
+    #btn button{
+        position: relative;
+        left: 8.5rem;
+        top: 1rem;
+        right: 0;
     }
 }
