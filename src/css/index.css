@@ -26,10 +26,8 @@ article {
     flex-direction: column;
     padding: 2rem;
     gap: 10px;
-    margin: 2rem;
-    left: 4rem;
+    margin: 2rem auto; /* Centraliza o article na tela */
     width: 70rem;
-    position: relative;
     max-width: 100%;
     height: auto;
     border-radius: 25px;
@@ -87,4 +85,39 @@ article p {
     text-align: center; /* Centraliza o texto */
     max-width: 95%; /* Ajuste o valor conforme necessário para controlar a largura */
     margin: 0 auto; /* Centraliza o parágrafo dentro do article */
+}
+@media (max-width: 768px) {
+    #container-topo {
+        flex-direction: row;
+    }
+    article {
+        width: 90%; /* Ajuste conforme necessário */
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+    #logo {
+        width: 20%;
+        height: auto;
+        margin: 0.5rem;
+    }
+    .menu-topo {
+    display: flex;
+    margin-right: 10rem;
+    margin-top: 0.5rem;
+    }
+    .menu-topo a {
+        color: var(--cor-contraste);
+        font-family: "Mont";
+        font-size: 1rem;
+        padding: 15px;
+        text-decoration: none;
+        position: relative;
+        text-align: center 
+    }
+    article h2 {
+            font-size: 2rem;
+    }
+    article p {
+            font-size: 1rem;
+    }
 }

@@ -21,9 +21,6 @@
     align-items: center;
     justify-content: space-between;
 }
-body{
-    background-color: #FFFFFF;
-}
 #buttons-pet{
     display: flex;
     position: relative;
@@ -104,7 +101,7 @@ body{
 .pet-container {
     display: flex;
     border-radius: 0px 20px 20px 20px;
-    margin: 3rem;
+    margin: 1rem;
     width: 50rem;
     position: relative;
     right: 1rem;
@@ -278,4 +275,132 @@ body{
 }
 .menu-topo a:hover::after {
     width: 100%; 
+}
+@media (max-width: 768px) {
+    #container-topo {
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #logo {
+        position: relative;
+        right: 1.2rem;
+        width: 25%;
+        margin: 0.1rem 0;
+    }
+    .menu-topo {
+        position: relative;
+        display: flex;
+        margin-top: 0.5rem;
+    }
+    .menu-topo a {
+        color: var(--cor-contraste);
+        font-family: "Mont";
+        font-size: 1rem;
+        padding: 10px;
+        text-decoration: none;
+        position: relative;
+        text-align: center 
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .pet-container {
+        position: relative;
+        right: 1.5rem;
+        left: 0rem;
+        flex-direction: column;
+        align-items: center;
+        width: 19.8rem;
+        height: auto;
+        margin: 0.5rem ;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    #pet-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    #name-pet{
+        right: 2.4rem;
+        top: -1.2rem;
+    }
+    #species-pet{
+        right: 1rem;
+        top: -2.4rem;
+    }
+    #age-pet{
+        position: relative;
+        top: -2.5rem;
+        right: 0rem;
+        left: -1rem;
+        
+    } 
+    #race-pet{
+        left: 0.2rem;
+        top: -2.4rem;
+    }
+    #description-pet {
+        left: 0.2rem;
+        top: -2.3rem;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0.5rem 0;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0.5rem auto;
+        width: 90%; /* Ajusta a largura da div para que o texto caiba */
+        overflow-wrap: break-word; /* Quebra o texto, se necessário */
+    }
+    #description p{
+        left: 0.3rem;
+        top: -11.6rem;
+
+    }
+    #name, #species, #age, #race {
+        left: 0rem;
+        top: -6rem;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: 0.2rem;
+    }
+
+    #buttons-pet {
+        justify-content: center;
+        gap: 10px;
+    }
+    #main-pet{
+        margin: 0rem ;
+    }
+    #pet-edit {
+        margin: 2rem;
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+    .pet-photo img{
+        border-radius: 0px 20px 20px 20px;
+        width: 90%; 
+        height: 90%;
+        left: 0.4rem;
+        object-fit: cover; 
+    }
+    #buttons-pet button {
+        position: relative;
+        top: auto;
+        left: -20rem;
+        padding: 0.5rem 1rem;
+    }
+    #buttons-pet {
+        display: flex;
+        justify-content: center;
+        gap: 1rem; /* Espaçamento entre os botões */
+        margin-top: 4rem; /* Espaço entre a descrição e os botões */
+    }
 }
