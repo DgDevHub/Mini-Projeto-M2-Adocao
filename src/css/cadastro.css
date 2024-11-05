@@ -97,7 +97,7 @@ label[for="input-name"] {
 }
 #input-species{
     top: 3.6rem;
-    right: 18rem;
+    right: 18.5rem;
     position: relative;
     justify-self: center;
     font-family: "Mont";
@@ -107,11 +107,11 @@ label[for="input-name"] {
     label[for="input-species"] {
         position: relative;
         top: 4.45rem;
-        right: 18.3rem;
+        right: 18.7rem;
     }
 #input-age{
     top: 7.2rem;
-    right: 36.6rem;
+    right: 37.6rem;
     position: relative;
     justify-self: center;
     font-family: "Mont";
@@ -121,12 +121,12 @@ label[for="input-name"] {
     label[for="input-age"] {
         position: relative;
         top: 7.85rem;
-        right: 37.2rem;
+        right: 37.8rem;
     }
 
 #input-race{
     position: relative;
-    right: 54.7rem;
+    right: 56.2rem;
     top: 10.8rem;
     justify-self: center;
     font-family: "Mont";
@@ -136,10 +136,10 @@ label[for="input-name"] {
     label[for="input-race"] {
         position: relative;
         top: 11.6rem;
-        right: 55.8rem;
+        right: 56.4rem;
     }
     #input-description {
-        margin-top: 10px;
+        margin-top: 0.8rem;
         font-family: "Mont";
         color: var(--cor-contraste);
         font-size: 1rem;
@@ -152,7 +152,7 @@ label[for="input-name"] {
     }
 .descricao{
     position: relative;
-    right: 74rem;
+    right: 76rem;
     top: 14.7rem;
 }
 .descricao p{
