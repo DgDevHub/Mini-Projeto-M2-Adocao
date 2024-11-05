@@ -236,7 +236,16 @@ label[for="input-name"] {
     #inputs-pet img{
         border-radius: 0px 20px 20px 20px;
         width: 95%; 
-        height: 95%;
+        height: 15rem;
+        left: 0.4rem;
+        object-fit: cover;
+        top: 0; 
+        right: 0;
+    }
+    #petImage{
+        border-radius: 0px 20px 20px 20px;
+        width: 95%; 
+        height: 15rem;
         left: 0.4rem;
         object-fit: cover;
         top: 0; 
