@@ -193,3 +193,113 @@ label[for="input-name"] {
     width: 10%;
     height: 10%;
 }
+@media (max-width: 768px) {
+    #container-topo {
+        align-items: center;
+        padding: 1rem;
+    }
+    body{
+        overflow: auto;
+    }
+    #logo {
+        position: relative;
+        right: 1.2rem;
+        width: 25%;
+        margin: 0.1rem 0;
+    }
+    .menu-topo {
+        position: relative;
+        display: flex;
+        margin-top: 0.5rem;
+    }
+    .menu-topo a {
+        color: var(--cor-contraste);
+        font-family: "Mont";
+        font-size: 1rem;
+        padding: 10px;
+        text-decoration: none;
+        position: relative;
+        text-align: center 
+    }
+    #inputs-pet{
+        position: relative;
+        right: 1.5rem;
+        left: 1.2rem;
+        flex-direction: column;
+        align-items: center;
+        width: 19.8rem;
+        height: 55rem;
+        margin: 0.5rem ;
+        padding: 1rem;
+        box-sizing: border-box;
+
+    }
+    #inputs-pet img{
+        border-radius: 0px 20px 20px 20px;
+        width: 95%; 
+        height: 95%;
+        left: 0.4rem;
+        object-fit: cover;
+        top: 0; 
+        right: 0;
+    }
+    #input-name,
+    #input-species,
+    #input-age,
+    #input-race,
+    #input-description {
+        width: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        margin-bottom: 1rem;
+    }
+    label[for="input-name"] {
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+    }
+    label[for="input-species"] {
+        position: relative;
+        top: -0.5rem;
+        left: 0rem;
+    }
+    label[for="input-age"] {
+        position: relative;
+        top: -0.5rem;
+        left: 0rem;
+    }
+    label[for="input-race"] {
+        position: relative;
+        top: -0.5rem;
+        left: 0rem;
+    }
+    label[for="input-description"] {
+        position: relative;
+        top: -0.5rem;
+        left: 6rem;
+    }
+    .descricao{
+        position: relative;
+        top: 1rem;
+        left: 0rem;
+    }
+    .descricao p {
+        position: relative;
+        top: 1rem;
+        left: 2.8rem;
+        font-family: "Mont";
+        color: var(--cor-contraste);
+        font-size: 1rem;
+    }
+    #mensagem2{
+        left: 3.8rem;
+    }
+    #mensagem{
+        left: 3.2rem;
+    }
+    #Enviar-form {
+        left: 3rem;
+        top: 0;
+    }
+}

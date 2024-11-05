@@ -52,8 +52,8 @@
 /*Componentes */
 #pet-edit button{
     position: relative;
-    top: -10rem;
-    left: 13rem;
+    top: -14rem;
+    left: 43rem;
     width: auto;
     color: var(--cor-contraste);
     font-family: "Mont";
@@ -202,7 +202,7 @@
     top: -5.3rem;
     font-family: "Mont";
     font-size: 1.5rem;
-    left: 21.5rem;
+    left: 22rem;
     color: var(--cor-contraste);
 }
 #race{
